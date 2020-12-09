@@ -79,7 +79,7 @@
 }
 
 .menu-elements:hover {
-    border-bottom: 1px solid blue;     
+    border-bottom: 1px solid blue;   
 }
 
 .sidebar-contact {
@@ -101,15 +101,86 @@
 
 
 /* ==================== HERO ==================== */
-.main-content-container {
-    margin: 0 0 0 400px;
-}
 
 .hero {
     height: 100vh;
     width: 100%;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
 }
+
+.home-text {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 40px;
+    padding: 20px;
+}
+
+.home-text-line {
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin: 10px 0;
+}
+
+.home-text-title {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.home-text-description {
+    font-size: small;
+    margin-top: 0;
+}
+
+.home-button {
+    width: 150px;
+    height: 50px;
+}
+
+.home-button a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-img {
+    height: 100vh;
+    width: 900px;
+    background-image: url("../images/LIghts-removebg-BW.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-img:hover {
+    background-image: url("../images/LIghts-removebg.png");
+    transform: scale(1.01);
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .about {
     height: 50vh;
