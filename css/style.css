@@ -2,14 +2,20 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 .maincontainer {
     margin: 0 200px;
 }
 
+.main-content-container {
+    margin: 0 0 0 400px;
+}
+
 .text-container {
     margin-bottom: 120px;
+    padding: 60px;
 }
 
 /* ==================== SIDEBAR ==================== */
@@ -167,26 +173,76 @@
 
 
 
+/* ==================== ABOUT ME ==================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.about {
-    height: 50vh;
-    width: 100%;
-    background-color: green;
+.about-card {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
+.border-bottom-red {
+    border-bottom: solid #ee6c4d;
+}
+
+.border-bottom-black {
+    border-bottom: solid #293241;
+}
+
+.border-bottom-yellow {
+    border-bottom: solid #fdc500;
+}
+
+.border-bottom-blue {
+    border-bottom: solid #3d5a80;
+}
+
+.card-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-text-container {
+    margin-bottom: 30px;
+}
+
+.card-text-container h5 {
+    font-size: small;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.card-text-container h3 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#DataStructures {
+    color: #ee6c4d;
+}
+
+#Algorithms {
+    color: #293241;
+}
+
+#Frontend {
+    color: #fdc500;
+}
+
+#Backend {
+    color: #3d5a80;
+}
+
+
+
+
+
 
 .whatido {
     height: 50vh;
