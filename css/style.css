@@ -244,11 +244,44 @@
 
 
 
+
+/* ==================== WHAT I DO ==================== */
 .whatido {
-    height: 50vh;
     width: 100%;
-    background-color: cyan;
 }
+
+.whatido-text-container {
+    margin-bottom: 50px;
+}
+
+.whatido-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.whatido-card {
+    border: 1px solid;
+    width: 260px;
+    height: 260px;
+    position: relative;
+    margin: 30px 20px;
+}
+
+#folder {
+    position: absolute;
+    top: -56px;
+    left: 74px;
+}
+
+.whatido-card-text {
+    margin-top: 50px;
+}
+
+
+
+
+
 
 .skills {
     height: 70vh;
