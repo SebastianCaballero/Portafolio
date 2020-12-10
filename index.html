@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/grid.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c5b9b98cc2.js" crossorigin="anonymous"></script>
@@ -17,7 +18,12 @@
 
 
         <section class="sidebar">
-            <div class="sidebar-container">
+
+            <a class="menu-hide" onclick="showMenu()" href="#">
+                <i class="fas fa-bars fa-2x"></i>
+            </a>
+
+            <div id="sidebar-menu" class="sidebar-container sidebar-hide">
 
                 <div class="sidebar-img">
     
@@ -46,14 +52,15 @@
                         © Copyright ©2020 All rights reserved | This template is made with  by Colorlib Demo Images: Unsplash.com
                     </p> 
                     <div class="sidebar-icons">
-                        <i class="fab fa-facebook-square icon-large"></i>
-                        <i class="fab fa-instagram-square"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-github-square"></i>
+                        <a class="social-media-icons" target="_blank" href="https://www.facebook.com/juansebastian.caballero/"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a class="social-media-icons" target="_blank" href="https://www.instagram.com/sebastiancaballero_"><i class="fab fa-instagram-square fa-2x"></i></a>
+                        <a class="social-media-icons" target="_blank" href="https://twitter.com/_SCaballero_"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a class="social-media-icons" target="_blank" href="https://github.com/SebastianCaballero"><i class="fab fa-github-square fa-2x"></i></a>
                     </div>
                 </div>
 
             </div>
+
         </section>
     
         <section class="main-content-container">
@@ -78,22 +85,22 @@
                 <section class="card-container">
 
                     <div class="about-card border-bottom-red">
-                        <i id="DataStructures" class="fas fa-ethernet fa-2x"></i>
+                        <i id="DataStructures" class="fas fa-ethernet fa-3x"></i>
                         <h4>Data Structures</h4>
                     </div>
     
                     <div class="about-card border-bottom-black">
-                        <i id="Algorithms" class="fas fa-database fa-2x"></i>
+                        <i id="Algorithms" class="fas fa-database fa-3x"></i>
                         <h4>Algorithms</h4>
                     </div>
 
                     <div class="about-card border-bottom-yellow">
-                        <i id="Frontend" class="fas fa-crop-alt fa-2x"></i>                       
+                        <i id="Frontend" class="fas fa-crop-alt fa-3x"></i>                       
                         <h4>Frontend</h4>
                     </div>
     
                     <div class="about-card border-bottom-blue">
-                        <i id="Backend" class="fas fa-server fa-2x"></i>                       
+                        <i id="Backend" class="fas fa-server fa-3x"></i>                       
                         <h4>Backend</h4>
                     </div>
 
@@ -110,32 +117,24 @@
                 <div class="whatido-card-container">
                     
                     <div class="whatido-card">
-                        <i id="folder" class="fas fa-folder fa-7x"></i>
+                        <i id="folder" class="fas fa-folder fa-7x"><i id="fst-whatido-icon" class="fas fa-code-branch"></i></i>
                         <div class="whatido-card-text">
-                            <h4>INNOVATIVE IDEAS</h4>
-                            <p>Innovation in projects focused on helping vulnerable communities in Colombia</p>
+                            <h4>PROGRAMMING</h4>
+                            <p>Frontend and Backend Developer, specialist in data structures and algorithms using C++</p>
                         </div>
                     </div>
 
 
                     <div class="whatido-card">
-                        <i id="folder" class="fas fa-folder fa-7x"></i>
+                        <i id="folder" class="fas fa-folder fa-7x"><i id="snd-whatido-icon" class="fas fa-code"></i></i>
                         <div class="whatido-card-text">
-                            <h4>INNOVATIVE IDEAS</h4>
-                            <p>Innovation in projects focused on helping vulnerable communities in Colombia</p>
+                            <h4>TEAM WORKING</h4>
+                            <p>Certified programmer using Git tool in order to work in big teams</p>
                         </div>
                     </div>
 
                     <div class="whatido-card">
-                        <i id="folder" class="fas fa-folder fa-7x"></i>
-                        <div class="whatido-card-text">
-                            <h4>INNOVATIVE IDEAS</h4>
-                            <p>Innovation in projects focused on helping vulnerable communities in Colombia</p>
-                        </div>
-                    </div>
-
-                    <div class="whatido-card">
-                        <i id="folder" class="fas fa-folder fa-7x"></i>
+                        <i id="folder" class="fas fa-folder fa-7x"><i id="tth-whatido-icon" class="fas fa-chess-knight"></i></i>
                         <div class="whatido-card-text">
                             <h4>INNOVATIVE IDEAS</h4>
                             <p>Innovation in projects focused on helping vulnerable communities in Colombia</p>
@@ -143,18 +142,26 @@
                     </div>
 
                     <div class="whatido-card">
-                        <i id="folder" class="fas fa-folder fa-7x"></i>
+                        <i id="folder" class="fas fa-folder fa-7x"><i id="frth-whatido-icon" class="fas fa-border-all"></i></i>
                         <div class="whatido-card-text">
-                            <h4>INNOVATIVE IDEAS</h4>
-                            <p>Innovation in projects focused on helping vulnerable communities in Colombia</p>
+                            <h4>TEAMS ORGANIZATION</h4>
+                            <p>Leader focused on magement of working teams, specially in programming projects</p>
                         </div>
                     </div>
 
                     <div class="whatido-card">
-                        <i id="folder" class="fas fa-folder fa-7x"></i>
+                        <i id="folder" class="fas fa-folder fa-7x"><i id="fth-whatido-icon" class="fas fa-balance-scale-right"></i></i>
                         <div class="whatido-card-text">
-                            <h4>INNOVATIVE IDEAS</h4>
-                            <p>Innovation in projects focused on helping vulnerable communities in Colombia</p>
+                            <h4>DEBATING</h4>
+                            <p>Outstanding delegation in different United Nations Models representing different countries</p>
+                        </div>
+                    </div>
+
+                    <div class="whatido-card">
+                        <i id="folder" class="fas fa-folder fa-7x"><i id="sxth-whatido-icon" class="far fa-address-card"></i></i>
+                        <div class="whatido-card-text">
+                            <h4>STUDENT'S REPRESENTATION</h4>
+                            <p>Being an active part of Universidad del Rosario's Student's Council</p>
                         </div>
                     </div>
 

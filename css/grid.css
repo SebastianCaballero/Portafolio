@@ -6,7 +6,7 @@
     display: flex;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 576px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -20,11 +20,40 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
+
+    .sidebar {
+        width: 100%;
+        height: 10vh;
+        background-color: #e0fbfc;
+    }
+
+    .sidebar-container {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e0fbfc;
+
+    }
+
+    .main-content-container {
+        margin: 30px;
+        background-color: #f8f9fa;
+    }
+    
+    .text-container {
+        margin-bottom: 120px;
+        padding: 20px;
+    }
+    .sidebar-hide {
+        display: none;
+    }
 }
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     /* For desktop: */
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
@@ -38,6 +67,26 @@
     .col-md-10 {width: 83.33%;}
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
+
+    .sidebar {
+        width: 100%;
+        height: 10vh;
+        background-color: #e0fbfc;
+    }
+
+    .main-content-container {
+        margin: 30px;
+        background-color: #f8f9fa;
+    }
+    
+    .text-container {
+        margin-bottom: 120px;
+        padding: 20px;
+    }
+
+    .sidebar-hide {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -54,4 +103,29 @@
     .col-lg-10 {width: 83.33%;}
     .col-lg-11 {width: 91.66%;}
     .col-lg-12 {width: 100%;}
+
+    .sidebar {
+        width: 400px;
+        height: 100vh;
+        position: fixed;
+        background-color: #e0fbfc;
+    }
+
+    .maincontainer {
+        margin: 0 200px;
+    }
+    
+    .main-content-container {
+        margin: 0 0 0 400px;
+        background-color: #f8f9fa;
+    }
+    
+    .text-container {
+        margin-bottom: 120px;
+        padding: 60px;
+    }
+    .menu-hide {
+        display: none;
+    }
+    
 }
