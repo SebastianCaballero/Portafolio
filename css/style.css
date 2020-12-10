@@ -11,6 +11,7 @@
 
 .main-content-container {
     margin: 0 0 0 400px;
+    background-color: #f8f9fa;
 }
 
 .text-container {
@@ -23,7 +24,7 @@
     width: 400px;
     height: 100vh;
     position: fixed;
-    background-color: azure;
+    background-color: #e0fbfc;
 }
 .sidebar-container {
     height: 100%;
@@ -36,7 +37,7 @@
 .sidebar-img {
     width: 150px;
     height: 150px;
-    background-color: grey;
+    background-color: #ee6c4d;
     border-radius: 50%;
     margin: 50px 0 0 0;
     background-image: url("../images/VllSquareBW.jpeg");
@@ -85,7 +86,7 @@
 }
 
 .menu-elements:hover {
-    border-bottom: 1px solid blue;   
+    border-bottom: 1px solid #3d5a80;   
 }
 
 .sidebar-contact {
@@ -115,6 +116,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 120px;
+    background-color: white;
 }
 
 .home-text {
@@ -174,6 +176,10 @@
 
 
 /* ==================== ABOUT ME ==================== */
+
+.about  {
+    background-color: #f8f9fa;
+}
 
 .about-card {
     height: 120px;
